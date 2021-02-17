@@ -1,8 +1,4 @@
 """
-Author:         Ueslei Adriano Sutil
-Created:        08 Apr 2019
-Last modified:  05 Jan 2021
-
 TODO: Find a way to loop over a list of strings to delete 
              all this crappy infinite command lines. >(
             
