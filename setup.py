@@ -45,7 +45,6 @@ setup(
     description=' A Python package to postprocess, data analyze and visualize model outputs',
     long_description=long_description,
     author='Ueslei Adriano Sutil',
-    author_email='uesleisutil1@gmail.com',
     url='https://github.com/uesleisutil',
     classifiers=[
         'License :: OSI Approved :: BSD License',
