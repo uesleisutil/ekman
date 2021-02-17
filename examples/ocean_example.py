@@ -1,35 +1,43 @@
+# Import libraries.
+import os
 import numpy as np
+from ekman.conf import createFolders
+from ekman.ocean import ocean
 
-romsOriginalFilename = 'ocean_his.nc'
-romsNewFilename = 'ocean_his_new.nc'
-
-selectRomsBox = True
-romsBox = [-53, -40, -32, -23] # [lon_min, lon_max, lat_min, lat_max]
-
-selectRomsLevel = True
-romsLevel = np.arange(29, 29+1)
-
-selectRomsTimeStep   = True
-romsTimeStep = np.arange(159, 160+1)
-
+projectName = 'Test_01'
+projectAuthor = 'Ueslei Adriano Sutil'
 selectRomsVars = True
-romsSST = True
-romsTemp = False
-romsSalt = False
-romsTKE = False
-romsRho = False
-romsZeta = False
-romsW = False
-romsOmega = False
-romsLatent = False
-romsSensible = False
-romsLWRad = False
-romsSWRad = False
-romsEminusP = False
-romsEvaporation = False
-romsUwind = False
-romsVwind = False
-romsU = False
-romsV = False
-romsUbar = False
-romsVbar = False
+
+def run():
+    # Check if project already exists. If not, create a new folder.
+    checkFolder = os.path.isdir(projectName) 
+    getFolder   = os.getcwd()
+    print('Initializing project: '+projectName)
+
+    if checkFolder == False:
+        createFolders(projectName)
+        print('Project folders created. Now store raw output files in: '+getFolder+'/'+projectName)
+        raise SystemExit(0)
+    else:
+        print('Project folder already created. Continuing.')
+        pass
+
+    if selectRomsVars == True:
+
+        print('------------------------')        
+        print('ROMS section initialized')
+        print('------------------------')  
+        romsOriginalFilename = "roms.nc"
+        romsNewFilename = "roms_new.nc"
+        romsBox = [-53, -40, -32, -23] # [lon_min, lon_max, lat_min, lat_max]
+        romsLevel = np.arange(29, 29+1)
+        romsTStep = np.arange(159, 160+1)
+
+        romsOriDir = getFolder+'/'+projectName+'/'+romsOriginalFilename
+        romsNewDir = getFolder+'/'+projectName+'/'+romsNewFilename
+        ocean.vars(romsOriDir,romsNewDir,romsBox=romsBox,romsLevel=romsLevel,zeta=False,salt=True,temp=True)
+
+    # Program finished.
+    print('Program finished.')
+
+run()

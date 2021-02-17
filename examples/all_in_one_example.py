@@ -1,11 +1,3 @@
-"""
-File name: run_all_tests.py
-Author: Ueslei Adriano Sutil
-Email: uesleisutil1@gmail.com
-Created: 07 Apr 2020
-Last modified:  03 Jan 2021
-
-"""
 # Import libraries.
 import os
 import numpy as np
