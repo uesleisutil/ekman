@@ -27,13 +27,17 @@ from ekman.atmos import atmos
 from ekman.ice import ice
 ```
 
+## Examples
+Check the [Examples] folder.
+
+
 ### Ocean module
 
 The oceanic module currently supports the [ROMS] model. The arguments accepted by the library are:
 
 | **kwargs  | Details |
 | ------    | ------ |
-| romsBox   | Crop the grid into a smaller one. Similar to the `sellonlatbox` function from [CDO] . Use as: `[lon_min, lon_max, lat_min, lat_max]` |
+| romsBox   | Crop the grid into a smaller one. Similar to the `sellonlatbox` function from [CDO]. Use as: `[lon_min, lon_max, lat_min, lat_max]` |
 | romsLevel | Select vertical levels. Use as: `np.arange(min(romsLevel), max(romsLevel)+1)` |
 | romsTStep | Select vertical step: Use as: ` np.arange(min(romsTStep), max(romsTStep)+1)` |
 | temp      | Potential Temperature (DegC) |
@@ -106,9 +110,6 @@ The sea-ice module currently supports the [Paul Budgell's] sea-ice model. The ar
 | tisrf      | Sea-Ice Surface Temperature (DegC) |
 | iomflx      |  Ice-Ocean Mass Flux (m s-1) |
 | ti      |  Interior Ice Temperature (DegC) |
-
-## Examples
-Check the [Examples] folder.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
