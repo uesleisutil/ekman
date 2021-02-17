@@ -16,6 +16,3 @@ script:
 after_success:
   - python -m codecov
   - bash <(curl -s https://codecov.io/bash)
-
-notifications:
-    email: ueslei@outlook.com
