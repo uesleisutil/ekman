@@ -59,10 +59,9 @@ setup(
     python_requires='>=3',
     setup_requires=setup_requires,
     zip_safe=False,
-    packages=['ekman','ekman.tests'],
+    packages=['ekman'],
     package_dir={
-        'ekman': 'ekman',
-        'ekman.tests': 'ekman/tests',      
+        'ekman': 'ekman', 
         },
     include_package_data=True,
 )
