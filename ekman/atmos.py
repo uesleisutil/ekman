@@ -1697,3 +1697,4 @@ class atmos(object):
                             wrfNewVar[i,:,:] = wrfRawVar                     
                     bar.next()
                 bar.finish() 
+        atmosNewFile.close()

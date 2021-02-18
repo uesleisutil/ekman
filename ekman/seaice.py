@@ -383,3 +383,4 @@ class seaice(object):
                         iceNewVar[i,:,:] = iceRawVar                     
                 bar.next()
             bar.finish() 
+        iceNewFile.close()

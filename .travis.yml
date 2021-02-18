@@ -22,10 +22,11 @@ install:
     - pip3 install -r requirements.txt
     - pip3 install -r dev-requirements.txt    
     - pip3 install .
+    - pip install codecov
 script:
     - coverage run -m pytest ./tests/run_all_tests.py
 branches:
     only:
     - main
 after_success:
-    - bash <(curl -s https://codecov.io/bash)
+  - codecov
