@@ -126,12 +126,13 @@ Please make sure to update tests as appropriate.
 
 ## License
 The code in this project is released under the [MIT](https://choosealicense.com/licenses/mit/) license.
+
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fuesleisutil%2FEkman.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fuesleisutil%2FEkman?ref=badge_large)
 
 [//]: # (http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
-[Examples]: <https://github.com/uesleisutil/ekman/examples>
+[Examples]: <https://github.com/uesleisutil/ekman/tree/main/examples>
 [ROMS]: <https://www.myroms.org/>
 [CDO]: <https://code.mpimet.mpg.de/projects/cdo/>
 [Paul Budgell's]: <https://link.springer.com/article/10.1007/s10236-005-0008-3>
-[WRF]: <https://www.mmm.ucar.edu/weather-research-and-forecasting-model> # 
+[WRF]: <https://www.mmm.ucar.edu/weather-research-and-forecasting-model> 
