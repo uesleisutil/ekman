@@ -1,6 +1,7 @@
 # Ekman
 [![Build Status](https://travis-ci.org/uesleisutil/ekman.svg?branch=main)](https://travis-ci.org/uesleisutil/ekman)
-
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fuesleisutil%2FEkman.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fuesleisutil%2FEkman?ref=badge_shield)
 
 Ekman is an open-source Python package to postprocess, data analyze and visualize Weather Research Forecast (WRF), Regional Ocean Modeling System (ROMS), Wave-Watch 3 (WW3) and Budgell's Sea Ice outputs files.
 
@@ -11,7 +12,6 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
 ```bash
 pip install ekman
 ```
-
 
 > **Note**: `Numpy`, `netCDF4`, `wrf-python` and `matplotlib` are required to run this program.
 
@@ -125,7 +125,8 @@ Please make sure to update tests as appropriate.
 
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+The code in this project is released under the [MIT](https://choosealicense.com/licenses/mit/) license.
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fuesleisutil%2FEkman.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fuesleisutil%2FEkman?ref=badge_large)
 
 [//]: # (http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
