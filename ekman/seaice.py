@@ -3,7 +3,7 @@ This file generates a new ROMS output file from scratch.
 It is netCDF4 CF-compliant.
 
 TODO: Find a way to loop over a list of strings to delete 
-             all this crappy infinite command lines. 
+             all this crappy infinite command lines. >(
 """
 
 from   netCDF4 import Dataset
