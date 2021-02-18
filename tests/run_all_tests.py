@@ -18,10 +18,10 @@ import pytest
 projectName = 'Test_01'
 projectAuthor = 'Ueslei Adriano Sutil'
 selectRomsVars = True
-selectWrfVars = True
+selectWrfVars = False
 selectSeaIceVars = False
 
-def run():
+def test_run():
     # Check if project already exists. If not, create a new folder.
     checkFolder = os.path.isdir(projectName) 
     getFolder   = os.getcwd()
@@ -36,24 +36,17 @@ def run():
         pass
 
     if selectRomsVars == True:
-
-        print('------------------------')        
-        print('ROMS section initialized')
-        print('------------------------')  
         romsOriginalFilename = "roms.nc"
         romsNewFilename = "roms_new.nc"
         romsBox = [-53, -40, -32, -23] # [lon_min, lon_max, lat_min, lat_max]
-        romsLevel = np.arange(29, 29+1)
+        romsLevel = np.arange(1,1+1)
         romsTStep = np.arange(159, 160+1)
 
         romsOriDir = getFolder+'/'+projectName+'/'+romsOriginalFilename
         romsNewDir = getFolder+'/'+projectName+'/'+romsNewFilename
-        ocean.vars(romsOriDir,romsNewDir,romsBox=romsBox,romsLevel=romsLevel,romsTStep=romsTStep,zeta=False,salt=True,temp=True)
-   
+        ocean.vars(romsOriDir,romsNewDir,romsBox=romsBox,romsLevel=romsLevel,romsTStep=romsTStep,temp=True)
+
     if selectWrfVars == True:  
-        print('------------------------')        
-        print('WRF section initialized')
-        print('------------------------')  
         wrfOriginalFilename = "wrf.nc"
         wrfNewFilename = "wrf_new.nc"
         wrfBox = [-53, -40, -32, -23] # [lon_min, lon_max, lat_min, lat_max]
@@ -65,9 +58,6 @@ def run():
         atmos.vars(wrfOriDir,wrfNewDir,wrfBox=wrfBox,wrfLevel=wrfLevel,wrfTStep=wrfTStep,latent=True,sensible=True)
 
     if selectSeaIceVars == True:
-        print('---------------------------')  
-        print('Sea-Ice section initialized')
-        print('---------------------------')  
         seaiceOriginalFilename = "roms.nc"
         seaiceNewFilename = "roms_seaice_new.nc"
         seaiceBox = [-53, -40, -32, -23] # [lon_min, lon_max, lat_min, lat_max]
@@ -81,4 +71,4 @@ def run():
     # Program finished.
     print('Program finished.')
 
-run()
+test_run()
