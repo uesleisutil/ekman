@@ -9,6 +9,8 @@ matrix:
           python: 3.9 
 before_install:
     - chmod a+x ./Test_01
+   env:
+    - CODECOV_TOKEN=hGtVK50vyNzEMKdpcNXHdWWrzQRXfD9oBkOVN6SmXpaSik2pJq/WGTBuA/E9MTSqMBmqKhB6ojfvUEhMQIjGRKSKHeFwiRHecyYCFFRIgn8=
 addons:
   apt:
     packages:
@@ -26,8 +28,9 @@ install:
     - pip install pytest-cov
 script:
     - coverage run -m pytest ./tests/run_all_tests.py
+    - coverage report -m
 branches:
     only:
     - main
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -t token
+  - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
