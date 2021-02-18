@@ -26,7 +26,6 @@ install:
     - pip install pytest-cov
 script:
     - coverage run -m pytest ./tests/run_all_tests.py
-    - coverage report -m
 branches:
     only:
     - main
