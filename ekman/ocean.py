@@ -1294,3 +1294,5 @@ class ocean(object):
                             romsNewVar[i,:,:] = romsRawVar                     
                     bar.next()
                 bar.finish() 
+
+romsNewFile.close()
