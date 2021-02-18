@@ -32,6 +32,6 @@ script:
     - coverage run -m pytest tests/
 branches:
     only:
-    - master
+    - main
 after_success:
     - bash <(curl -s https://codecov.io/bash)
