@@ -28,6 +28,7 @@ install:
     - pip3 install -U pip
     - pip3 install -r requirements.txt
     - pip3 install .
+    - sudo apt-get install gfortran
 script:
     - coverage run -m pytest tests/
 branches:
