@@ -13,6 +13,7 @@ import numpy as np
 from ekman.ocean import ocean
 from ekman.atmos import atmos
 from ekman.seaice import seaice
+import pytest
 
 projectName = 'Test_01'
 projectAuthor = 'Ueslei Adriano Sutil'

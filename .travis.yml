@@ -1,22 +1,37 @@
-sudo: required
 language: python
 matrix:
-  include:
-    - python: 3.6
-    - python: 3.7
-    - python: 3.8
-
-install:
-  - pip install -r requirements.txt
-  - pip install .
-
- git:
-  depth: 150
-   
+    include:
+        - name: "Python 3.7 on Xenial Linux"
+          python: 3.7 
+        - name: "Python 3.8 on Xenial Linux"
+          python: 3.8 
+        - name: "Python 3.9 on Xenial Linux"
+          python: 3.9 
+        - name: "Python 3.7.5 on macOS"
+          os: osx
+          osx_image: xcode10.2
+          language: generic
+          env: PYENV_VERSION=3.7.5
+        - name: "Python 3.7.7 on macOS"
+          os: osx
+          osx_image: xcode11.7
+          language: generic
+          env: PYENV_VERSION=3.7.7
+        - name: "Python 3.9 on macOS"
+          os: osx
+          osx_image: xcode12.2
+          language: generic
+          env: PYENV_VERSION=3.9.0
+install: 
+    - python --version
+    - python3 --version
+    - pip3 install -U pip
+    - pip3 install -r requirements.txt
+    - pip3 install .
 script:
-  - coverage run -m unittest discover
-
+    - coverage run -m pytest tests/
+branches:
+    only:
+    - master
 after_success:
-  - python -m codecov
-  - bash <(curl -s https://codecov.io/bash)
-
+    - bash <(curl -s https://codecov.io/bash)
