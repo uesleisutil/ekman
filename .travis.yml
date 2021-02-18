@@ -7,7 +7,7 @@ matrix:
           python: 3.8 
         - name: "Python 3.9 on Xenial Linux"
           python: 3.9 
-before_script:
+before_install:
     - chmod a+x ./Test_01
 addons:
   apt:
