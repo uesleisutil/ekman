@@ -9,8 +9,6 @@ matrix:
           python: 3.9 
 before_install:
     - chmod a+x ./Test_01
-   env:
-    - CODECOV_TOKEN=hGtVK50vyNzEMKdpcNXHdWWrzQRXfD9oBkOVN6SmXpaSik2pJq/WGTBuA/E9MTSqMBmqKhB6ojfvUEhMQIjGRKSKHeFwiRHecyYCFFRIgn8=
 addons:
   apt:
     packages:
@@ -33,4 +31,4 @@ branches:
     only:
     - main
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
+    - bash <(curl -s https://codecov.io/bash)
