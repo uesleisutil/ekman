@@ -1,5 +1,6 @@
 {
     "codecov": {
+        "token": 
         "notify": {
             "wait_for_ci": true
         },
