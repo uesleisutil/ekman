@@ -7,28 +7,19 @@ matrix:
           python: 3.8 
         - name: "Python 3.9 on Xenial Linux"
           python: 3.9 
-        - name: "Python 3.7.5 on macOS"
-          os: osx
-          osx_image: xcode10.2
-          language: generic
-          env: PYENV_VERSION=3.7.5
-        - name: "Python 3.7.7 on macOS"
-          os: osx
-          osx_image: xcode11.7
-          language: generic
-          env: PYENV_VERSION=3.7.7
-        - name: "Python 3.9 on macOS"
-          os: osx
-          osx_image: xcode12.2
-          language: generic
-          env: PYENV_VERSION=3.9.0
+addons:
+  apt:
+    packages:
+      - libnetcdf-dev
+      - netcdf-bin # libnetcdf-dev doesn't contain nc-config in ubuntu 12.04 (in 16.04 it is part of libnetcdf-dev)
+      - gfortran
+
 install: 
     - python --version
     - python3 --version
     - pip3 install -U pip
     - pip3 install -r requirements.txt
     - pip3 install .
-    - sudo apt-get install gfortran
 script:
     - coverage run -m pytest tests/
 branches:
