@@ -7,6 +7,7 @@ matrix:
           python: 3.8 
         - name: "Python 3.9 on Xenial Linux"
           python: 3.9 
+
 addons:
   apt:
     packages:
@@ -14,6 +15,9 @@ addons:
       - netcdf-bin # libnetcdf-dev doesn't contain nc-config in ubuntu 12.04 (in 16.04 it is part of libnetcdf-dev)
       - gfortran
 
+before_install:
+    - chmod +x *
+    
 install: 
     - python --version
     - python3 --version
@@ -22,7 +26,7 @@ install:
     - pip3 install -r dev-requirements.txt    
     - pip3 install .
 script:
-    - sudo coverage run -m pytest tests/run_all_tests.py
+    - coverage run -m pytest tests/run_all_tests.py
 branches:
     only:
     - main
