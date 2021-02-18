@@ -18,7 +18,7 @@ import pytest
 projectName = 'Test_01'
 projectAuthor = 'Ueslei Adriano Sutil'
 selectRomsVars = True
-selectWrfVars = True
+selectWrfVars = False
 selectSeaIceVars = False
 
 def test_run():
