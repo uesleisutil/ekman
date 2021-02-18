@@ -1,4 +1,5 @@
 codecov:
+  token: as9v6enmrM30abQBAtJMgOT8RM5lPOt+2xbCcFpd0asMtqn0jybJiqizoX+3yj9t5ANTpi4P/txUFGlqnqJSt+iOlLh4M1BA07n8aJVFljA=
   require_ci_to_pass: yes
   notify:
     wait_for_ci: yes

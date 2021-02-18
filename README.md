@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/uesleisutil/ekman.svg?branch=main)](https://travis-ci.org/uesleisutil/ekman)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fuesleisutil%2FEkman.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fuesleisutil%2FEkman?ref=badge_shield)
+[![codecov](https://codecov.io/gh/uesleisutil/ekman/branch/main/graph/badge.svg?token=J1xWME34Fq)](https://codecov.io/gh/uesleisutil/ekman)
 
 Ekman is an open-source Python package to postprocess, data analyze and visualize Weather Research Forecast (WRF), Regional Ocean Modeling System (ROMS), Wave-Watch 3 (WW3) and Budgell's Sea Ice outputs files.
 
