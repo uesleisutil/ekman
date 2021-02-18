@@ -8,7 +8,7 @@ from ekman.atmos import atmos
 from ekman.seaice import seaice
 
 projectName = 'Test_01'
-projectAuthor = 'Ueslei Adriano Sutil'
+projectAuthor = 'Your name'
 selectRomsVars = False
 selectWrfVars = False
 selectSeaIceVars = True

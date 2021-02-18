@@ -4,7 +4,7 @@
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fuesleisutil%2FEkman.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fuesleisutil%2FEkman?ref=badge_shield)
 [![codecov](https://codecov.io/gh/uesleisutil/ekman/branch/main/graph/badge.svg?token=J1xWME34Fq)](https://codecov.io/gh/uesleisutil/ekman)
 
-Ekman is an open-source Python package to postprocess, data analyze and visualize Weather Research Forecast (WRF), Regional Ocean Modeling System (ROMS), Wave-Watch 3 (WW3) and Budgell's Sea Ice outputs files.
+Ekman is an open-source Python package to postprocess, data analyze and visualize Weather Research Forecast (WRF), Regional Ocean Modeling System (ROMS) and Budgell's Sea Ice outputs files.
 
 ## Installation
 

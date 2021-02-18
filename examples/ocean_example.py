@@ -5,7 +5,7 @@ from ekman.conf import createFolders
 from ekman.ocean import ocean
 
 projectName = 'Test_01'
-projectAuthor = 'Ueslei Adriano Sutil'
+projectAuthor = 'Your name'
 selectRomsVars = True
 
 def run():

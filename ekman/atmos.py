@@ -1,6 +1,6 @@
 """
 TODO: Find a way to loop over a list of strings to delete 
-             all this crappy infinite command lines. >(
+             all this crappy infinite command lines.
             
             Insert staggered U, V and W wind components.
 """

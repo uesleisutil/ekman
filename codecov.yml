@@ -8,8 +8,8 @@
     },
     "coverage": {
         "range": [
-            80,
-            90
+            70,
+            100
         ],
         "round": "down",
         "status": {

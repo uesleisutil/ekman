@@ -5,7 +5,7 @@ from ekman.conf import createFolders
 from ekman.atmos import atmos
 
 projectName = 'Test_01'
-projectAuthor = 'Ueslei Adriano Sutil'
+projectAuthor = 'Your name'
 selectWrfVars = True
 
 def run():

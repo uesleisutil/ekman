@@ -5,7 +5,7 @@ import numpy as np
 from ekman.seaice import seaice
 
 projectName = 'Test_01'
-projectAuthor = 'Ueslei Adriano Sutil'
+projectAuthor = 'Your name'
 selectSeaIceVars = True
 
 def run():

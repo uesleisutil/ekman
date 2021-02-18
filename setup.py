@@ -48,7 +48,6 @@ setup(
     url='https://github.com/uesleisutil',
     classifiers=[
         'License :: OSI Approved :: BSD License',
-        'Intended Audience :: Developers',
         'Intended Audience :: Science/Research',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
