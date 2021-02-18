@@ -1,0 +1,6 @@
+numpy>=1.15
+netCDF4 >= 1.4.2
+progress >= 1.5
+matplotlib>=3.0.2
+wrf-python >= 1.3.1
+coverage

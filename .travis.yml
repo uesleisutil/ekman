@@ -19,6 +19,7 @@ install:
     - python3 --version
     - pip3 install -U pip
     - pip3 install -r requirements.txt
+    - pip3 install -r dev-requirements.txt    
     - pip3 install .
 script:
     - coverage run -m pytest tests/
